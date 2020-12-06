@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tourist Booking</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+
+
+    <!-- custom -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link href="css/featured-content-slider.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'ProximaNova';
+            src: url('font/ProximaNovaCond-Light.otf');
+        }
+        @font-face {
+            font-family: 'ProximaNovalight';
+            src: url('font/ProximaNova-Light.otf');
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Navgiation menus -->
+
+    <section class="banner">
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav  mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">sign-up</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="banner-content">
+                <h5 class="banner-text">
+                    Our 800 Thousand Properties and 20 million rooms at your finger tips.
+                </h5>
+
+                <h1 class="banner-head">Best Travel Experience</h1>
+
+
+            </div>
+
+
+            <!--Grid column-->
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-10" style="left: 10%;">
+                        <div class="search">
+                            <form>
+                                <input class="input " id="search-text" type="text" name="s" placeholder="NORWAY">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10" style="left: 13%;">
+
+
+                    <div class="form-group">
+
+                        <div class="col-md-3" style="padding:0px; padding:0px;background-color: #2c0ba7;">
+                            <!-- <span id="chk-in">check-in</span> -->
+                            <label for="dp1" class="label-chk-in">check-in</label> 
+                            <input id="datepicker" type="text" name="dp1" class="form-control clickable input-md" id="DtChkIn"
+                                placeholder="&#xf133;  ">
+                        </div>
+
+                        <div class="col-md-3" style="padding:0px; padding:0px;background-color: #2c0ba7;">
+                            <!-- <span id="chk-out">check-out</span> -->
+                            <label for="dp2" class="label-chk-out">check-out</label> 
+                            <input id="datepicker2" type="text" name="dp2"  class="form-control clickable input-md" id="DtChkOut"
+                                placeholder="&#xf133;">
+                        </div>
+
+                        <div class="col-md-3" style="padding:0px; padding:0px;background-color: #2c0ba7;">
+                            <!-- <span id="adult">Adult</span> -->
+                            <label for="dp3" class="label-adult">Adult</label> 
+                            <div class="controlgroup">
+                                <select id="car-type" name="dp3">
+                                    <option>1 Adults, 1 Childern</option>
+                                    <option>2 Adults, 2 Childern</option>
+                                    <option>3 Adults,3 Childern</option>
+                                    <option>4 Adults,4 Childern</option>
+                                    <option>5 Adults,5 Childern</option>
+                                    <option>6 Adults,6 Childern</option>
+                                    <option>7 Adults,7 Childern</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="padding:0px;">
+                            <input class="ui-button ui-widget ui-corner-all" type="submit" value="SEARCH"> </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Grid column-->
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Navgiation menus -->
+
+    <!-- Intro -->
+
+    <section id="intro" style="display: none;">
+
+        <div class="container">
+            <div class="row">
+                <div class="discover col-md-12">
+                    <h2>
+                        Discover
+                    </h2>
+                    <h1>HandPicked Collection</h1>
+                    <h1 class="dis-nether">Netherlands</h1>
+
+
+                </div>
+
+
+
+                <div class=" col-md-4">
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem doloremque nihil quia
+                            modi? Accusamus qui nihil unde, quaerat quas nisi perspiciatis vero quis ratione quae
+                            recusandae libero quidem officiis alias?
+                        </p>
+
+                        <p>
+                            <span>
+                                950<br>
+                                rooms
+                            </span>
+                            <span>
+                                950<br>
+                                Hotels
+                            </span>
+                            <span>
+                                950<br>
+                                Resort
+                            </span>
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="dis-img col-md-8">
+                    <img src="images/bg1.jpg">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Intro End -->
+
+    <!-- Slider 1 -->
+
+    <section class="hero-slider" style="display: none; margin-top: 70px; margin-bottom: 70px;">
+        <div class="hero-slide slider_1">
+            <div class="slider-overlay slider-1-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white text-white">
+                    <h2 class="h1 text-white">Create Websites Beyond Your Imagination</h2>
+                    <p class="hidden-xs">Evolve your web experiences and create stunning, feature-rich websites.</p>
+                    <a class=" text-white btn slide-btn" href="https://www.solodev.com/product/create.stml">Read the
+                        Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_2">
+            <div class="slider-overlay slider-2-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Enterprise Hosting That's Out of This World</h2>
+                    <p class="hidden-xs">Pilot your website on the only platform built for the AWS Cloud</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/host.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_3">
+            <div class="slider-overlay slider-3-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Target and Engage a Universe of Customers</h2>
+                    <p class="hidden-xs">Boldy go where no marketer has gone before with a powerful platform that
+                        integrates everything</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/engage.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_4">
+            <div class="slider-overlay slider-4-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Web Support From Launch to Orbit</h2>
+                    <p class="hidden-xs">Solodev mission control is standing by at every stage with 24/7 U.S. based
+                        support.</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/support.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- slider 1 -->
+
+
+    <!-- Slider 2 -->
+
+    <div class="sec-grey paddingSection80" style="display: none;">
+        <div class="container">
+            <section class="slider text-center">
+                <div class="text-center">
+                    <h5>
+                        Discover
+                    </h5>
+                    <h1>HandPicked Collection</h1>
+                    <h1 class="dis-nether">Netherlands</h1>
+                </div>
+                <div class="big-box-slider">
+                    <div class="row box-slider box-slider-content">
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <div class="side-content">
+                                        <h3>Web Experiences</h3>
+                                        <div class="slide-photo visible-xs">
+                                            <img src="images/bg.jpg" alt="" class="img-responsive visible-xs">
+                                        </div>
+                                        <hr>
+                                        <p>Evolve your web experiences and create stunning, feature-rich websites.</p>
+                                        <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Cloud Hosting</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Pilot your website on the only platform built for the AWS Cloud.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Target Users</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Boldy go where no marketer has gone before with a powerful platform that
+                                        integrates everything.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>24/7 Support</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Solodev mission control is standing by at every stage with 24/7 U.S. based
+                                        support.
+
+                                    </p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Build with Solodev</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Explore how the Solodev Web Experience Platform puts you at the center of the
+                                        digital universe.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Slider 2-->
+
+
+    <!-- Swiper -->
+    <section class="swiper-slider">
+        <div class="text-center">
+            <h5>
+                Discover
+            </h5>
+            <h1>HandPicked Collection</h1>
+            <!-- <h1 class="dis-nether">Netherlands<i class="fas fa-angle-down"></i></h1> -->
+            <div class="controlgroup">
+                <select id="city-name" name="city-name">
+                    <option>Netherlands</option>
+                    <option>London</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                    <option>Dubai</option>
+                     
+                </select>
+            </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="left-text">
+                        <h4 class="location-name">London</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos, aliquid. Impedit, eius quasi minima obcaecati dolorem
+                            explicabo maxime cumque sed ullam eos earum ratione accusamus facilis!
+                            Provident soluta odit nostrum?
+                        </p>
+                        <span class="loct-num">950 &nbsp; &nbsp;&nbsp;&nbsp;35 &nbsp;&nbsp; &nbsp; 1003</span>
+                        <br>
+                        <span class="loct-name">Hotels &nbsp;&nbsp; &nbsp;&nbsp;Villas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            resorts</span>
+                        <br>
+                        <br>
+                        <h4 class="show-all">
+                            <a href="#">SHOW ALL</a>
+
+                        </h4>
+
+                    </div>
+                    <div class="swipe-img">
+                        <img src="images/bg2.jpg" class="img-responsive">
+
+                    </div>
+
+
+                    <!-- <img src="images/bg2.jpg"> -->
+                </div>
+                <!-- two -->
+                <div class="swiper-slide">
+                    <div class="left-text">
+                        <h4 class="location-name">London</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos, aliquid. Impedit, eius quasi minima obcaecati dolorem
+                            explicabo maxime cumque sed ullam eos earum ratione accusamus facilis!
+                            Provident soluta odit nostrum?
+                        </p>
+                        <span class="loct-num">950 &nbsp; &nbsp;&nbsp;&nbsp;35 &nbsp;&nbsp; &nbsp; 1003</span>
+                        <br>
+                        <span class="loct-name">Hotels &nbsp;&nbsp; &nbsp;&nbsp;Villas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            resorts</span>
+                        <br>
+                        <br>
+                        <h4 class="show-all">
+                            <a href="#">SHOW ALL</a>
+
+                        </h4>
+
+                    </div>
+                    <div class="swipe-img">
+                        <img src="images/bg2.jpg" class="img-responsive">
+
+                    </div>
+
+
+                    <!-- <img src="images/bg2.jpg"> -->
+                </div>
+                <!-- Three -->
+                <div class="swiper-slide">
+                    <div class="left-text">
+                        <h4 class="location-name">London</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos, aliquid. Impedit, eius quasi minima obcaecati dolorem
+                            explicabo maxime cumque sed ullam eos earum ratione accusamus facilis!
+                            Provident soluta odit nostrum?
+                        </p>
+                        <span class="loct-num">950 &nbsp; &nbsp;&nbsp;&nbsp;35 &nbsp;&nbsp; &nbsp; 1003</span>
+                        <br>
+                        <span class="loct-name">Hotels &nbsp;&nbsp; &nbsp;&nbsp;Villas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            resorts</span>
+                        <br>
+                        <br>
+                        <h4 class="show-all">
+                            <a href="#">SHOW ALL</a>
+
+                        </h4>
+
+                    </div>
+                    <div class="swipe-img">
+                        <img src="images/bg3.jpg" class="img-responsive">
+
+                    </div>
+
+
+                    <!-- <img src="images/bg2.jpg"> -->
+                </div>
+                <!-- Four -->
+                <div class="swiper-slide">
+                    <div class="left-text">
+                        <h4 class="location-name">London</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos, aliquid. Impedit, eius quasi minima obcaecati dolorem
+                            explicabo maxime cumque sed ullam eos earum ratione accusamus facilis!
+                            Provident soluta odit nostrum?
+                        </p>
+                        <span class="loct-num">950 &nbsp; &nbsp;&nbsp;&nbsp;35 &nbsp;&nbsp; &nbsp; 1003</span>
+                        <br>
+                        <span class="loct-name">Hotels &nbsp;&nbsp; &nbsp;&nbsp;Villas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            resorts</span>
+                        <br>
+                        <br>
+                        <h4 class="show-all">
+                            <a href="#">SHOW ALL</a>
+
+                        </h4>
+
+                    </div>
+                    <div class="swipe-img">
+                        <img src="images/bg4.jpg" class="img-responsive">
+
+                    </div>
+
+
+                    <!-- <img src="images/bg2.jpg"> -->
+                </div>
+                <!-- Five -->
+                <div class="swiper-slide">
+                    <div class="left-text">
+                        <h4 class="location-name">London</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos, aliquid. Impedit, eius quasi minima obcaecati dolorem
+                            explicabo maxime cumque sed ullam eos earum ratione accusamus facilis!
+                            Provident soluta odit nostrum?
+                        </p>
+                        <span class="loct-num">950 &nbsp; &nbsp;&nbsp;&nbsp;35 &nbsp;&nbsp; &nbsp; 1003</span>
+                        <br>
+                        <span class="loct-name">Hotels &nbsp;&nbsp; &nbsp;&nbsp;Villas &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            resorts</span>
+                        <br>
+                        <br>
+                        <h4 class="show-all">
+                            <a href="#">SHOW ALL</a>
+
+                        </h4>
+
+                    </div>
+                    <div class="swipe-img">
+                        <img src="images/bg5.jpg" class="img-responsive">
+
+                    </div>
+
+
+                    <!-- <img src="images/bg2.jpg"> -->
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+            <img src="images/arrowrw.png">
+
+        </div>
+        <div class="swiper-button-prev">
+            <img src="images/arrowlw.png">
+        </div>
+    </section>
+
+    <!-- Swiper -->
+
+
+    <!-- gallery -->
+
+    <section id="gallery" class="mb-5 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="discover col-md-12">
+                    <h5 class="text-center">
+                        Trending
+                    </h5>
+                    <h1>All Around the world</h1>
+
+
+                </div>
+
+
+                <div class="column">
+                    <div class="ghover ig1">
+                        <img src="images/bg1.jpg" class="image" style="width:100%">
+                        <span class="loc-btn-london">london </span>
+
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">Paro</h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="column ">
+                    <div class="ghover ig2">
+
+
+                        <img src="images/bg.jpg" style="width:100%">
+                        <span class="loc-btn-usa">USA </span>
+
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">londons </h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ghover ig4">
+
+                        <img src="images/bg.jpg" style="width:100%">
+
+                        <span class="loc-btn-swt">Switz </span>
+
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">USA</h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="column">
+
+
+                    <div class="ghover ig3">
+                        <img src="images/bg.jpg" style="width:100%">
+                        <span class="loc-btn-ind">India </span>
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">london </h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ghover" style="display: none;">
+                        <img src="images/bg.jpg" style="width:100%">
+                        <span class="loc-btn">Thailand </span>
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">london </h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="ghover ig5">
+
+                        <img src="images/bg1.jpg" style="width:100%">
+                        <span class="loc-btn-can">Canada </span>
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 class="loc-title">london </h3>
+                                <span class="loc-text">125 Properties</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- gallery -->
+
+    <!-- deciding -->
+
+    <section id="deciding" class="mb-5 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="discover col-md-12">
+                    <h5 class="text-center">
+                        Still deciding where to stay?
+                    </h5>
+                    <h1>Let us make your decision easier</h1>
+                    <h3> <a href="#"> Let us make your decision easier</a></h3>
+
+                    <div class="columns" style="background-color:#3300ba;">
+                        <!-- <h2>Column 1</h2> -->
+                        <img src="images/wallet.png" class="wallet">
+                        <p>New deals listed daily for every budget..</p>
+                    </div>
+                    <div class="columns" style="background-color:#3300ba;">
+                        <!-- <h2>Column 2</h2> -->
+                        <img src="images/tap.png" class="wallet">
+                        <p>New deals listed daily for every budget..</p>
+                    </div>
+                    <div class="columns" style="background-color:#3300ba;">
+                        <h2>WE'RE HERE FOR YOU</h2>
+
+                    </div>
+                    <div class="columns" style="background-color:#3300ba;">
+                        <!-- <h2>Column 4</h2> -->
+                        <img src="images/speech-bubble.png" class="wallet">
+
+                        <p>New deals listed daily for every budget</p>
+                    </div>
+                    <div class="columns" style="background-color:#3300ba;">
+                        <!-- <h2>Column 4</h2> -->
+                        <img src="images/future.png" class="wallet">
+
+                        <p>New deals listed daily for every budget</p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="footer col-md-12" style="display: flex;">
+                    <div class="col-md-3">
+                        <img src="images/logo-b.png">
+
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/qr.png">
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+
+
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">All Themes</a>
+                            </li>
+                            <li>
+                                <a href="#!">All Destinations</a>
+                            </li>
+                            <li>
+                                <a href="#!">Review</a>
+                            </li>
+                            <li>
+                                <a href="#!">Car Rental</a>
+                            </li>
+                            <li>
+                                <a href="#!">Flight Finder</a>
+                            </li>
+                            <li>
+                                <a href="#!">Seek & Co</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+
+
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">All Themes</a>
+                            </li>
+                            <li>
+                                <a href="#!">All Destinations</a>
+                            </li>
+                            <li>
+                                <a href="#!">Review</a>
+                            </li>
+                            <li>
+                                <a href="#!">Car Rental</a>
+                            </li>
+                            <li>
+                                <a href="#!">Flight Finder</a>
+                            </li>
+                            <li>
+                                <a href="#!">Seek & Co</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- deciding -->
+
+    <!-- Slider -->
+
+    <div class="sec-grey paddingSection80" style="display: none;">
+        <div class="container">
+            <section class="slider text-center">
+                <div class="text-center">
+
+                </div>
+                <div class="big-box-slider">
+                    <div class="row box-slider box-slider-content">
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Web Experiences</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Evolve your web experiences and create stunning, feature-rich websites.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Cloud Hosting</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Pilot your website on the only platform built for the AWS Cloud.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Target Users</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Boldy go where no marketer has gone before with a powerful platform that
+                                        integrates everything.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>24/7 Support</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Solodev mission control is standing by at every stage with 24/7 U.S. based
+                                        support.
+
+                                    </p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12 slide-item">
+                            <div class="row box-slide-item">
+                                <div
+                                    class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 slide-text text-left">
+                                    <h3>Build with Solodev</h3>
+                                    <div class="slide-photo visible-xs">
+                                        <img src="images/bg1.jpg" alt="" class="img-responsive visible-xs">
+                                    </div>
+                                    <hr>
+                                    <p>Explore how the Solodev Web Experience Platform puts you at the center of the
+                                        digital universe.</p>
+                                    <a href="#" class="btn btn-danger"> SHOW ALL</a>
+                                </div>
+                                <div class="col-md-7 col-sm-6 slide-photo hidden-xs">
+                                    <img src="images/bg1.jpg" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section class="hero-slider" style="display: none;">
+        <div class="hero-slide slider_1">
+            <div class="slider-overlay slider-1-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white text-white">
+                    <h2 class="h1 text-white">Create Websites Beyond Your Imagination</h2>
+                    <p class="hidden-xs">Evolve your web experiences and create stunning, feature-rich websites.</p>
+                    <a class=" text-white btn slide-btn" href="https://www.solodev.com/product/create.stml">Read the
+                        Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_2">
+            <div class="slider-overlay slider-2-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Enterprise Hosting That's Out of This World</h2>
+                    <p class="hidden-xs">Pilot your website on the only platform built for the AWS Cloud</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/host.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_3">
+            <div class="slider-overlay slider-3-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Target and Engage a Universe of Customers</h2>
+                    <p class="hidden-xs">Boldy go where no marketer has gone before with a powerful platform that
+                        integrates everything</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/engage.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide slider_4">
+            <div class="slider-overlay slider-4-overlay"></div>
+            <div class="container">
+                <div class="slide-content text-white">
+                    <h2 class="h1 text-white">Web Support From Launch to Orbit</h2>
+                    <p class="hidden-xs">Solodev mission control is standing by at every stage with 24/7 U.S. based
+                        support.</p>
+                    <a class="btn slide-btn text-white" href="https://www.solodev.com/product/support.stml">Start for
+                        Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Slider -->
+
+
+    <!-- Gallery -->
+
+
+
+
+    <!-- Gallery -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="js/featured-content-slider.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+
+    <script>
+
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+        var checkin = $('#dp1').datepicker({
+
+            beforeShowDay: function (date) {
+                return date.valueOf() >= now.valueOf();
+            },
+            autoclose: true
+
+        }).on('changeDate', function (ev) {
+            if (ev.date.valueOf() > checkout.datepicker("getDate").valueOf() || !checkout.datepicker("getDate").valueOf()) {
+
+                var newDate = new Date(ev.date);
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.datepicker("update", newDate);
+
+            }
+            $('#dp2')[0].focus();
+        });
+
+
+        var checkout = $('#dp2').datepicker({
+            beforeShowDay: function (date) {
+                if (!checkin.datepicker("getDate").valueOf()) {
+                    return date.valueOf() >= new Date().valueOf();
+                } else {
+                    return date.valueOf() > checkin.datepicker("getDate").valueOf();
+                }
+            },
+            autoclose: true
+
+        }).on('changeDate', function (ev) { });
+
+    </script>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker(
+                {
+                    dateFormat: 'dd,M,yy',
+                    showButtonPanel: true,
+                    changeMonth: true,
+                    changeYear: true
+                }
+            ).datepicker('setDate', '0');
+
+        });
+
+
+        $(function () {
+            $("#datepicker2").datepicker(
+                {
+                    dateFormat: 'dd,M,yy',
+                    showButtonPanel: true,
+                    changeMonth: true,
+                    changeYear: true
+                }
+            ).datepicker('setDate', '1');
+
+        });
+
+    </script>
+
+
+
+
+    <script>
+        $('.hero-slider').slick({
+            slidesToShow: 1,
+            prevArrow: $(".themes-carousel-controls .prev"),
+            nextArrow: $(".themes-carousel-controls .next"),
+            autoplay: true,
+            dots: false,
+            autoplaySpeed: 2000,
+            fade: true
+        });
+    </script>
+
+</body>
+
+</html>
